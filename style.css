@@ -1,0 +1,184 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #101010; /* Dark Background */
+    color: #f2f2f2; /* Light text color for contrast */
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+/* Header */
+header {
+    background-color: #141414;
+    color: #0099ff; /* Bright color for gaming vibe */
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+header .logo h1 {
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #0077ff;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+header nav ul li a:hover {
+    color: #fff;
+    transition: color 0.3s;
+}
+
+/* Hero Section */
+.hero {
+    background: url('gaming-background.jpg') no-repeat center center/cover; /* Replace with your own background image */
+    padding: 100px 20px;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+/* Mouse Types Section */
+.mice-section {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #181818;
+}
+
+.mice-section h2 {
+    font-size: 2.5rem;
+    color: #0077ff;
+    margin-bottom: 30px;
+}
+
+.mouse-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.mouse-card {
+    width: 22%;
+    background-color: #212121;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    cursor: pointer;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.mouse-card:hover {
+    transform: scale(1.05);
+    background-color: #333333;
+}
+
+.mouse-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.mouse-description {
+    padding: 20px;
+    text-align: left;
+}
+
+.mouse-description h3 {
+    font-size: 1.5rem;
+    color: #008cff;
+    margin-bottom: 10px;
+}
+
+.mouse-description p {
+    font-size: 1rem;
+    color: #b0b0b0;
+}
+
+/* Popup styles */
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Dark overlay */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.popup-content {
+    background-color: #282828;
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
+}
+
+.popup-content h3 {
+    color: #0059ff;
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+}
+
+.popup-content p {
+    color: #e0e0e0;
+    margin-bottom: 20px;
+    font-size: 1rem;
+}
+
+.popup-content button {
+    padding: 12px 24px;
+    font-size: 1rem;
+    background-color: #2e7b9e;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.popup-content button:hover {
+    background-color: #1983e6;
+    transition: background-color 0.3s;
+}
+
+/* Footer */
+footer {
+    background-color: #222222;
+    color: #67a3e7;
+    padding: 20px;
+    text-align: center;
+    margin-top: 30px;
+}
